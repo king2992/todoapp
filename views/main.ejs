@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Todo App에 오신 것을 환영합니다.</h1>
+      <% if (user) { %>
+      <p>안녕하세요, <%= user.username %>님!</p>
+      <a href="/logout">로그아웃</a>
+      <% } else { %>
+      <a href="/login">로그인</a>
+      <p>로그인 후 이용해주세요.</p>
+      <% } %>
+
+      <a href="/todoList">할 일 목록</a>
+    </div>
+  </body>
+</html>
